@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "title": "New Product",
+    "photo": "path/to/photo.jpg",
+    "price": 29.99,
+    "stock": 50
+  }
+]
