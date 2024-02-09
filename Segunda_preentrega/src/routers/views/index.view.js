@@ -9,7 +9,7 @@ viewsRouter.get("/", (req, res, next) => {
   try {
     const mainEvents = ["hp", "pokemon", "batman"];
     const date = new Date();
-    return res.render("index", { events: mainEvents, date, title: "INDEX" });
+    return res.render("index", { events: mainEvents, date, title: "Tienda de Zapatos" });
   } catch (error) {
     next(error);
   }
