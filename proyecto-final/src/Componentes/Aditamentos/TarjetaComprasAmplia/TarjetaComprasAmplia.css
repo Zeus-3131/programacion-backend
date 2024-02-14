@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+:root #nike-lime {
+  --background-color: #131313;
+  --card-bg-color: #232323;
+  --card-primary-color: #9bdc28;
+  --brand-name: "Nike";
+}
+
+:root #jordan-yellow {
+  --background-color: #131313;
+  --card-bg-color: #232323;
+  --card-primary-color: #e5c810;
+  --brand-name: "Jordan";
+}
+
+:root #puma-orange {
+  --background-color: #131313;
+  --card-bg-color: #232323;
+  --card-primary-color: #ff8d00;
+  --brand-name: "Puma";
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #131313;
+} */
+
+.container1 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.container1 .card {
+  position: relative;
+  margin: 20px;
+  width: 350px;
+  height: 450px;
+  background: var(--card-bg-color);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container1 .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--card-primary-color);
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.container1 .card:hover::before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.container1 .card::after {
+  content: "Puma";
+  position: absolute;
+  top: 50%;
+  left: auto;
+  font-size: 8rem;
+  font-weight: 900;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.05);
+}
+
+.container1 .card .image-box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+
+.container1 .card:hover .image-box {
+  top: 0%;
+  transform: translateY(0%);
+}
+
+.container1 .card .image-box img {
+  position: absolute;
+  width: 270px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  transition: 0.5s;
+}
+
+.container1 .card .image-box:hover img {
+  width: 350px;
+  transition: 0.5s;
+}
+
+.container1 .card .content-box {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.container1 .card:hover .content-box {
+  height: 210px;
+}
+
+.container1 .card .content-box h2 {
+  margin: 5px 0;
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.container1 .card .content-box .size,
+.container1 .card .content-box .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.container1 .card:hover .content-box .size {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.container1 .card:hover .content-box .color {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.container1 .card .content-box .size h3,
+.container1 .card .content-box .color h3 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.container1 .card .content-box .size span {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: 0.5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container1 .card .content-box .size span:hover {
+  background: var(--card-primary-color);
+}
+
+.container1 .card .content-box .color span {
+  width: 20px;
+  height: 20px;
+  background: #ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/*Temp fix till JS is implemented*/
+.container1 .card .content-box .color span:nth-child(2) {
+  background: #9bdc28;
+}
+.container1 .card .content-box .color span:nth-child(3) {
+  background: #e5c810;
+}
+.container1 .card .content-box .color span:nth-child(4) {
+  background: #ff8d00;
+}
+
+.container1 .card .content-box .button a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 20px;
+  background: var(--card-primary-color);
+  border-radius: 8px;
+  margin-top: -5px;
+  font-weight: 600;
+  color: #111;
+  opacity: 0%;
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+
+.container1 .card .content-box .button:hover {
+  transform: scale(1.15);
+  transition: 0.5s;
+}
+
+.container1 .card:hover .content-box .button a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.75s;
+}
+
+@media (max-width: 800px) {
+  .container1 {
+    flex-direction: column;
+  }
+}

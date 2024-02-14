@@ -1,0 +1,43 @@
+
+.carrito{
+    height: 15px;
+}
+
+.pruebacarrrito{
+    width: 20px;
+}
+
+.cartdiv{
+    height: 100%;
+}
+
+.cartul{
+    height: 100%;
+}
+
+.cartLi {
+    width: 80px;
+    height: 100%;
+}
+
+.cartp{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 60px;
+    bottom: 30px;
+}
+
+.cartLink{
+    width: 200%;
+    height: 300%;
+}
+
+.numero{
+    width: 50px;
+}
+
+.carritost {
+    /* Puedes agregar estilos temporales para asegurarte de que el número sea visible */
+    color: red;
+  }

@@ -1,0 +1,128 @@
+.pieDePagina{
+    margin-top: 60px;
+    color: #ffffff;
+    background-color: #f5f5f5;
+}
+
+.contenPie{
+    background-image: url(//tabbase.myshopify.com/cdn/shop/files/footer_1920x721.jpg?v=1650368832);
+    background-repeat: no-repeat;
+}
+
+.contenedorFormulario{
+    padding: 60px 0 0;
+}
+
+.contenFormulario{
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+.formularioConten{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.ladosConten{
+    text-align: center;
+    flex: 0 0 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.contenF{
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* .contenFinal{
+    
+} */
+
+.tituloFooter1{
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: .02em;
+    word-break: break-word;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    /* font-weight: 500; */
+    line-height: 1.2;
+}
+
+.parrafoFooter1{
+    font-size: calc(var(--font-size-base) * 1.15px);
+    margin: 6px;
+    font-weight: 400;
+
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.formularioPie{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-control {
+    position: relative;
+
+    margin: 20px 0 40px;
+    width: 700px;
+  }
+
+  .form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .form-control input:focus,
+  .form-control input:valid {
+    outline: 0;
+    border-bottom-color: red;
+  }
+  
+  .form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+  }
+  
+  .form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .form-control input:focus + label span,
+  .form-control input:valid + label span {
+    color: white;
+    transform: translateY(-30px);
+  }
+
+  .botonSuscripcion:hover {
+    color:red;
+  }

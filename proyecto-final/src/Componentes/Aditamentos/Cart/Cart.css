@@ -1,0 +1,65 @@
+/* Estilos para el encabezado */
+.my-cart-header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Estilos para el contenedor del carrito */
+.my-cart-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para cada producto en el carrito */
+.my-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+/* Estilos para la información de cada producto */
+.my-product-info {
+    flex-grow: 1;
+}
+
+/* Estilos para los botones de acción */
+.my-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.my-button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.my-button:hover {
+    background-color: #555;
+}
+
+/* Estilos específicos para el stock */
+.my-product span {
+    color: green;
+}
+
+/* Estilos para indicar productos fuera de stock */
+.my-product.out-of-stock {
+    color: red;
+}
+
+.CartP{
+    text-align: left ;
+    font-size: 1rem;
+    margin-top: 5px;
+}

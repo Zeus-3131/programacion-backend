@@ -1,0 +1,49 @@
+.ContenedorNavegacionTienda{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .navProductosTienda{
+    padding: 8px 0;
+    background: rgba(var(--color-foreground), 0.04);
+    margin: 20px 0;
+    border-radius: 10px;
+  
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  
+  .col-12Tienda{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .enlacePTienda{
+    text-decoration: none;
+  }
+  
+  .faTienda {
+    font: normal normal normal 14px/1 FontAwesome;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .itemh2Tienda {
+    color: red;
+    text-align: center;
+    /* margin-top: 10px; */
+  }
+  
+  .contenedorDivDelListTienda {
+    display: flex;
+  }
+  
+  .contenedorProductosItemListTienda {
+    flex: 1;
+    padding: 20px;
+    justify-content: center;
+    align-content: center;
+  }

@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,800&display=swap');
+
+.contenedorItemD{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.urban-feet-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    background: #fff;
+    margin: 20px;
+}
+
+.urban-feet-container .urban-feet-imgBx {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background: #212121;
+    transition: .3s linear;
+}
+
+.urban-feet-container .urban-feet-imgBx:before {
+    content: 'Nike';
+    position: absolute;
+    top: 0px;
+    left: 24px;
+    color: #000;
+    opacity: 0.2;
+    font-size: 8em;
+    font-weight: 800;
+}
+
+.urban-feet-container .urban-feet-imgBx img {
+    position: relative;
+    width: 700px;
+    transform: rotate(-30deg);
+    left: -50px;
+    transition: .9s linear;
+}
+
+.urban-feet-container .urban-feet-counter {
+    /* position: absolute; */
+    bottom: -15px;
+    right: -15px;
+    background-color: #000;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.urban-feet-container .urban-feet-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.urban-feet-container .urban-feet-details  {
+    max-width: 100%;
+}
+
+.urban-feet-container .urban-feet-details h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.4em;
+    line-height: 1em;
+    color: #444;
+}
+
+.urban-feet-container .urban-feet-details h2 span {
+    font-size: 0.4em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999;
+}
+
+.urban-feet-container .urban-feet-details .ItemP {
+    max-width: 85%;
+    /* margin-left: 15%; */
+    color: #333;
+    font-size: 15px;
+    margin-bottom: 36px;
+}
+
+.ItemP{
+    text-align: left;
+}
+
+.urban-feet-container .urban-feet-details .urban-feet-buttons {
+    display: flex;
+    /* align-items: center; */
+    margin-top: 20px;
+    width: 100%;
+}
+
+.urban-feet-container .urban-feet-details .urban-feet-buttons button, .enlaceTerminarCompra {
+    background: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.urban-feet-container .urban-feet-details h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+    color: #a2a2a2;
+    float: left;
+}
+
+.urban-feet-container .urban-feet-details button {
+    background: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    margin-top: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 40px;
+    float: right;
+}
+
+.urban-feet-container .product-colors span {
+    width: 26px;
+    height: 26px;
+    top: 7px;
+    margin-right: 12px;
+    left: 10px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.urban-feet-container .black {
+    background: #000;
+}
+
+.urban-feet-container .red {
+    background: #D5212E;
+}
+
+.urban-feet-container .orange {
+    background: #F18557;
+}
+
+.urban-feet-container .product-colors .active:after {
+    content: "";
+    width: 36px;
+    height: 36px;
+    border: 2px solid #000;
+    position: absolute;
+    border-radius: 50%;
+    box-sizing: border-box;
+    left: -5px;
+    top: -5px;
+}
+/* .urban-feet-container .urban-feet-counter {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+} */
+
+.urban-feet-container .urban-feet-counter button {
+    background: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.urban-feet-container .urban-feet-counter span {
+    margin: 0 10px;
+    font-size: 1.5em;
+    color: #000;
+}
+
+
+/* responsive */
+@media (max-width: 1080px) {
+    .urban-feet-container {
+        height: auto;
+    }
+    .urban-feet-container .urban-feet-imgBx {
+        padding: 40px;
+        box-sizing: border-box;
+        width: 100% !important;
+        height: auto;
+        text-align: center;
+        overflow: hidden;
+    }
+    .urban-feet-container .urban-feet-imgBx img {
+        left: initial;
+        max-width: 100%;
+        transform: rotate(0deg);
+    }
+    .urban-feet-container .urban-feet-details {
+        width: 100% !important;
+        height: auto;
+        padding: 20px;
+    }
+    .urban-feet-container .urban-feet-details .ItemP {
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
+
+.botonAgregarCarrito {
+    position: relative;
+    left: 170px;
+    top: 50px;
+
+ 
+}
+
+.enlaceTerminarCompra{
+    text-decoration: none;
+    position: relative;
+    left: 340px;
+    top: 55px;
+}
+
+.enlaceTerminarCompra:hover{
+    color: red;
+}
+
+
+

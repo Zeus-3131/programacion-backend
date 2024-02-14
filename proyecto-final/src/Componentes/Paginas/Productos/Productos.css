@@ -1,0 +1,58 @@
+.ContenedorNavegacionProductos,
+.ladosMain {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navProductos {
+  padding: 8px 0;
+  background: rgba(var(--color-foreground), 0.04);
+  margin: 20px 0;
+  border-radius: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.enlaceP {
+  text-decoration: none;
+}
+
+.fa {
+  font: normal normal normal 14px/1 FontAwesome;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.enlaceP:hover {
+  color: red;
+}
+
+/* estilos del main  */
+.contenedormainProductos {
+  display: flex;
+}
+
+.h1Productos {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contenedorDeProductos {
+  flex: 1;
+  padding: 20px;
+
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;  */
+}
+
+

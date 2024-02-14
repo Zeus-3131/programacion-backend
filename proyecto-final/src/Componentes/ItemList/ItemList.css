@@ -1,0 +1,6 @@
+.ordenarProductos {
+    display: grid;
+    grid-template-columns: repeat(3, .2fr);
+    gap: 20px;
+    justify-content: center;
+  }

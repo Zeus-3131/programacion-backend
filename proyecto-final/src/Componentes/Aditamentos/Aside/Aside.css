@@ -1,0 +1,78 @@
+/* Estilos para el aside */
+.contenedorAside{
+    flex: 0 0 25%;
+    max-width: 25%;
+    /* margin-left: 15px; */
+
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+
+.ubicarLidelAside input{
+    margin: 3px 10px 0 0;
+}
+
+.ubicarLidelAside label{
+    text-align: left;
+}
+
+.filtro-productos {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 250px;
+    font-family: Arial, sans-serif;
+}
+
+.filtro-seccion {
+    /* flex: 0 0 25%;
+    max-width: 25%; */
+    margin-bottom: 30px;
+}
+
+.filtro-seccion .estilos-filtro {
+    list-style: none;
+    padding-left: 0;
+    display: none; /* Inicialmente oculto */
+}
+
+/* Estilos para hacer desplegable cada sección */
+.seccion-titulo {
+    cursor: pointer;
+    position: relative;
+}
+
+/* Estilos de la flecha */
+.flecha {
+    position: absolute;
+    top: 6px;
+    right: 0;
+    transition: transform 0.3s ease;
+}
+
+/* Estilos cuando la sección está desplegada */
+.filtro-seccion.active .estilos-filtro {
+    display: flex;
+    flex-direction: column;
+}
+
+.estilos-filtro li{
+    display: flex;
+    align-items: flex-start;
+    width: 5%;
+}
+
+
+.filtro-seccion.active .flecha {
+    transform: rotate(90deg);
+}
+
+.limpiar-seccion{
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end ;
+}

@@ -1,0 +1,16 @@
+.CartItemP {
+  text-align: left ;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.CartItemButton{
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left: 725px;
+    /* bottom: 50px; */
+}

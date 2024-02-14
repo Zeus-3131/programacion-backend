@@ -1,0 +1,222 @@
+.container14{
+    position: relative;
+  }
+  
+  .container14 .card14{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .container14 .card14:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #9bdc28;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+  }
+  
+  .container14 .card14:hover:before{
+    clip-path: circle(300px at 80% -20%);
+  }
+  
+  .container14 .card14:after{
+    /* content: 'Puma'; */
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255,255,25,0.05)
+  }
+  
+  .container14 .card14 .imgBx{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+  }
+  
+  .container14 .card14:hover .imgBx{
+    top: 0%;
+    transform: translateY(0%);
+      
+  }
+  
+  .container14 .card14 .imgBx img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+    width: 270px;
+  }
+  
+  .container14 .card14 .contentBx{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+  }
+  
+  .container14 .card14:hover .contentBx{
+    height: 210px;
+  }
+  
+  .container14 .card14 .contentBx h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 0;
+  }
+  
+  .container14 .card14 .contentBx .size, .container14 .card14 .contentBx .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;opacity: 0;
+    visibility: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .container14 .card14:hover .contentBx .size{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+  }
+  
+  .container14 .card14:hover .contentBx .color{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+  }
+  
+  .container14 .card14 .contentBx .size h3, .container14 .card14 .contentBx .color h3{
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+  }
+  
+  .container14 .card14 .contentBx .size span{
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .container14 .card14 .contentBx .size span:hover{
+    background: #9bdc28;
+  }
+  
+  .container14 .card14 .contentBx .color span{
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .container14 .card14 .contentBx .color span:nth-child(2){
+    background: #9bdc28;
+  }
+  
+  .container14 .card14 .contentBx .color span:nth-child(3){
+    background: #03a9f4;
+  }
+  
+  .container14 .card14 .contentBx .color span:nth-child(4){
+    background: #e91e63;
+  }
+  
+  .container14 .card14 .contentBx a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+    margin-top: 0;
+  }
+  
+  .container14 .card14:hover .contentBx a{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+    
+  }
+
+  .contenInfo{
+    margin-bottom: 10px;
+  }
+
+  .info2{
+    margin-top: 30px;
+  }
+
+
+  /* estilos para cada marca */
+  
+  /* Estilos específicos para Nike */
+  .nikeStyle {
+    background: #ff0000; /* Color de fondo para Nike */
+  }
+  
+  /* Estilos específicos para Puma */
+  .pumaStyle {
+    background: #0000ff; /* Color de fondo para Puma */
+  }
+  
+  /* Estilos específicos para Conver */
+  .converStyle {
+    background: #00ff00; /* Color de fondo para Conver */
+  }
+  
+  /* Estilos específicos para Lacose */
+  .lacoseStyle {
+    background: #ffff00; /* Color de fondo para Lacose */
+  }
+  
+  /* Estilos específicos para Adidas */
+  .adidasStyle {
+    background: #ff00ff; /* Color de fondo para Adidas */
+  }
+  
+  /* Estilos específicos para Rebook */
+  .rebookStyle {
+    background: #00ffff; /* Color de fondo para Rebook */
+  }
+  
