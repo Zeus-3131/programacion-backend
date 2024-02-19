@@ -1,4 +1,4 @@
-import Navbar_Superior from "./Navbar_superior";
+import Navbar_Superior from "./Navbar_Superior";
 import Navbar_Intermedio from "./Navbar_Intermedio";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";

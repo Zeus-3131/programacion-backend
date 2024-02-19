@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 import { CarritoContext } from "../../../Context/CarritoContext";
-import { db } from "../../../services/config";
-import { addDoc, collection, updateDoc, getDoc, doc } from "firebase/firestore";
-import Navbar from "../../Navbar/Navbar";
+// import { db } from "../../../services/config";
+// import { addDoc, collection, updateDoc, getDoc, doc } from "firebase/firestore";
+// import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';

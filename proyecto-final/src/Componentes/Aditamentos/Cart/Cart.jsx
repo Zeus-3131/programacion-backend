@@ -3,7 +3,7 @@ import { CarritoContext } from "../../../Context/CarritoContext";
 import "./Cart.css";
 import { Link } from "react-router-dom";
 import CartItem from "../CartItem/CartItem";
-import Navbar from "../../Navbar/Navbar";
+// import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
 
 const Cart = () => {

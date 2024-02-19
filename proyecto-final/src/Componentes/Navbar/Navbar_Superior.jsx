@@ -1,10 +1,6 @@
 import './Navbar_Superior.css';
 import CartWidget from '../Aditamentos/CartWidget/CartWidget.jsx';
 
-
-
-
-
 function Navbar_Superior() {
   return (
     <header>

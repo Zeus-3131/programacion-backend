@@ -5,29 +5,29 @@ import Footer from "../../Footer/Footer"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import ItemListTienda from "../../ItemListTienda/ItemListTienda"
-import {collection, getDocs, where, query} from "firebase/firestore"
-import { db } from "../../../services/config"; 
+// import {collection, getDocs, where, query} from "firebase/firestore"
+// import { db } from "../../../services/config"; 
 
 
 
 
 const Hombre = ({mostrarComponentesTienda = true}) => {
-  const [productos, setProductos] = useState([]);
-  const { idCategoria } = useParams();
+  // const [productos, setProductos] = useState([]);
+  // const { idCategoria } = useParams();
 
-  useEffect(()=>{
-    const misProductos = idCategoria ? query(collection(db, "Inventario"), where("idcat", "==", idCategoria)): collection(db, "Inventario");
+  // useEffect(()=>{
+  //   // const misProductos = idCategoria ? query(collection(db, "Inventario"), where("idcat", "==", idCategoria)): collection(db, "Inventario");
 
-    getDocs(misProductos)
-     .then(res=>{
-      const nuevosProductos = res.docs.map(doc=>{
-        const data = doc.data();
-        return {id:doc.id, ...data}
-      })
-      setProductos(nuevosProductos);
-     })
-     .catch(error=> console.log("Error",error))
-  },[idCategoria])
+  //   getDocs(misProductos)
+  //    .then(res=>{
+  //     const nuevosProductos = res.docs.map(doc=>{
+  //       const data = doc.data();
+  //       return {id:doc.id, ...data}
+  //     })
+  //     setProductos(nuevosProductos);
+  //    })
+  //    .catch(error=> console.log("Error",error))
+  // },[idCategoria])
   return (
     <div>
      {mostrarComponentesTienda && <Navbar />}
@@ -48,7 +48,7 @@ const Hombre = ({mostrarComponentesTienda = true}) => {
       <div className="contenedorDivDelListHombre">
         <div className="contenedorProductosItemListHombre">
           <h2 className="itemh2Hombre">Productos para Hombre</h2>
-          <ItemListTienda productos={productos} />
+          {/* <ItemListTienda productos={productos} /> */}
         </div>
       </div>
       {mostrarComponentesTienda && <Footer />}
